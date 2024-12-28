@@ -115,54 +115,191 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
-        <h1>Club Villa Alemana en Patines</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#grupos">Grupos y Horarios</a></li>
-                <li><a href="#competencias">Competencias</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header style="display: flex; align-items: center; justify-content: space-between; background-image: url('img/nicio.jpg'); background-size: cover; background-attachment: fixed; background-position: center; color: white; padding: 20px;">
+        <!-- Logo de Villa Alemana (izquierda) -->
+        <img src="img/Imagen6.gif" alt="Logo Villa Alemana en Patines" style="width: 140px; height: auto;">
+
+        <!-- Título del Club -->
+        <h1 style="flex: 1; text-align: center; margin: 0; font-size: 3.5rem;">Club Villa Alemana en Patines</h1>
+
+        <!-- Logo de la Federación (derecha) -->
+        <img src="img/Federación1.png" alt="Logo Federación" style="width: 190px; height: auto;">
     </header>
 
+    <!-- Navegación -->
+    <nav style="background-color: #222; padding: 10px;">
+        <ul style="list-style: none; display: flex; justify-content: center; padding: 0; margin: 0;">
+            <li style="margin: 0 15px;"><a href="#inicio" style="color: white; text-decoration: none;">Inicio</a></li>
+            <li style="margin: 0 15px;"><a href="#nosotros" style="color: white; text-decoration: none;">Nosotros</a></li>
+            <li style="margin: 0 15px;"><a href="#grupos" style="color: white; text-decoration: none;">Grupos y Horarios</a></li>
+            <li style="margin: 0 15px;"><a href="#contacto" style="color: white; text-decoration: none;">Contacto</a></li>
+        </ul>
+    </nav>
+
     <!-- Sección Inicio -->
-    <section id="inicio">
-        <h2>Bienvenidos</h2>
-        <p>Somos un club federado dedicado al patinaje de velocidad, promoviendo tanto el desarrollo recreativo como competitivo.</p>
-        <img src="img/portada.jpg" alt="Imagen del club en competencia">
-    </section>
+<section id="inicio" style="position: relative; height: 400px; color: white; overflow: hidden;">
+    <!-- Fondo animado -->
+    <div class="slideshow">
+        <div class="slide" style="background-image: url('img/Imagen45.jpg');"></div>
+        <div class="slide" style="background-image: url('img/Imagen23.jpg');"></div>
+        <div class="slide" style="background-image: url('img/Imagen24.jpg');"></div>
+    </div>
+
+    <!-- Contenido de la sección -->
+    <div class="content" style="position: relative; z-index: 1; text-align: center; padding: 50px;">
+        <h2>Bienvenidos al Club Villa Alemana en Patines</h2>
+        <p>Somos una comunidad apasionada por el patinaje de velocidad, donde el esfuerzo, la disciplina y el trabajo en equipo son nuestros pilares. Como club federado, nos enfocamos en formar deportistas íntegros, desde quienes buscan una experiencia recreativa hasta aquellos con aspiraciones competitivas en los más altos niveles.
+Aquí no solo entrenamos, ¡creamos historias sobre ruedas! Únete a nosotros y sé parte de una familia que impulsa sueños a toda velocidad.</p>
+    </div>
+</section>
+
+<style>
+/* Fondo animado */
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Envía el fondo detrás del contenido */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fade 9s infinite; /* Cambia cada 3 segundos */
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    33%, 66% {
+        opacity: 1;
+    }
+}
+
+/* Estilo del contenido */
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+</style>
+
 
     <!-- Sección Nosotros -->
-    <section id="nosotros">
-        <h2>Nosotros</h2>
-        <p>El Club Villa Alemana en Patines se enfoca exclusivamente en el patinaje de velocidad. Aunque no desarrollamos patinaje artístico, hockey patín o patín urbano/agresivo, nuestras etapas iniciales pueden ser útiles para otras disciplinas.</p>
-        <p>Contamos con entrenadores y patinadores de renombre nacional, divididos en cuatro grupos según habilidades e intereses.</p>
-        <h3>Profesor Principal: Luis César Muñoz Román</h3>
-        <ul>
-            <li>Edad: 29 años</li>
-            <li>Profesor de Educación Física y Licenciado en Educación</li>
-            <li>Certificaciones: Alto Rendimiento y Primeros Auxilios (FIEP), Entrenador de Patinaje de Velocidad (Comité Olímpico y World Skate Academy)</li>
-            <li>11 años de experiencia</li>
-            <li>Trayectoria: Quilpué, Valparaíso, Viña del Mar, Villa Alemana</li>
-        </ul>
-    </section>
+    <section id="nosotros" style="background-image: url('img/Imagen40.jpg'); background-size: cover; background-position: center; background-attachment: fixed; color: white; padding: 20px;">
+    <h2>Nosotros</h2>
+    <p>El Club Villa Alemana en Patines, fundado en 2011, se especializa en el desarrollo del patín carrera, enseñando desde las habilidades básicas hasta niveles avanzados. Nos comprometemos a formar deportistas íntegros y competitivos, capacitados para sobresalir tanto en el ámbito recreativo como en el profesional.</p>
+    <p>Contamos con una estructura organizativa sólida, entrenadores calificados y patinadores destacados que nos representan a nivel nacional.</p>
+
+    <!-- Directiva -->
+    <h3>Nuestra Directiva</h3>
+    <div style="display: flex; justify-content: space-around; gap: 50px; margin-bottom: 20px;">
+        <div style="text-align: center;">
+            <img src="img/Imagen26.jpg" alt="María Elsa Ormazabal" style="width: 150px; height: 150px; border-radius: 50%;">
+            <p>María Elsa Ormazabal</p>
+            <p>Tesorera</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="img/Imagen27.jpg" alt="Nestor Palma" style="width: 150px; height: 150px; border-radius: 50%;">
+            <p>Nestor Palma</p>
+            <p>Secretario</p>
+        </div>
+    </div>
+    <div style="width: auto; display: flex; justify-content: center; gap: 50px; margin-bottom: 20px;">
+    <div style="text-align: center; margin-right: 15px;">
+    <img src="img/Imagen28.jpg" alt="Roberto Vivar Rivas" style="width: 150px; height: 150px; border-radius: 50%;">
+    <p>Roberto Vivar Rivas</p>
+    <p>Presidente</p>
+</div>
+<div style="text-align: center; margin-left: 15px;">
+    <img src="img/Imagen25.jpg" alt="Elizabeth Ibacache" style="width: 150px; height: 150px; border-radius: 50%;">
+    <p>Elizabeth Ibacache</p>
+    <p>Vicepresidenta</p>
+</div>
+</div>
+    <div style="display: flex; justify-content: space-around; gap: 80px; margin-bottom: 20px;">
+        <div style="text-align: center;">
+            <img src="img/Imagen29.jpg" alt="Jorge Gacitúa" style="width: 150px; height: 150px; border-radius: 50%;">
+            <p>Jorge Gacitúa</p>
+            <p>Director</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="img/diego_estrada.jpg" alt="Diego Estrada" style="width: 150px; height: 150px; border-radius: 50%;">
+            <p>Diego Estrada</p>
+            <p>Director</p>
+        </div>
+    </div>
+
+    <!-- Profesores -->
+    <h3>Profesores</h3>
+    <div style="display: flex; justify-content: center; gap: 50px;">
+        <div style="text-align: center;">
+            <img src="img/Imagen30.jpg" alt="Cesar Muñoz" style="width: 150px; height: 150px; border-radius: 50%;">
+            <p>Cesar Muñoz</p>
+            <p>Profesor Grupos 3 y 4</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="img/Imagen31.jpg" alt="Diego Pinto" style="width: 150px; height: 150px; border-radius: 50%;">
+            <p>Diego Pinto</p>
+            <p>Profesor Grupo 2</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="img/Imagen32.jpg" alt="Camila Manzano" style="width: 150px; height: 150px; border-radius: 50%;">
+            <p>Camila Manzano</p>
+            <p>Profesora Grupo 1</p>
+        </div>
+    </div>
+</section>
+
+
 
     <!-- Sección Grupos y Horarios -->
-    <section id="grupos">
-        <h2>Grupos y Horarios</h2>
+<section id="grupos" style="position: relative; height: auto; color: white;">
+    <!-- Fondo animado -->
+    <div class="slideshow">
+        <div class="slide" style="background-image: url('img/Imagen53.jpg');"></div>
+        <div class="slide" style="background-image: url('img/Imagen52.jpg');"></div>
+        <div class="slide" style="background-image: url('img/Imagen54.jpg');"></div>
+    </div>
+
+    <!-- Contenido de la sección -->
+    <div class="content" style="position: relative; z-index: 1; text-align: center; padding: 50px;">
+      <h2>Grupos y Horarios</h2>
         <article>
-            <h3>Grupo 1 - Nivel Iniciación</h3>
-            <p>Recreativo, enfocado en habilidades básicas.</p>
+          <h3>Grupo 1 - Nivel Iniciación</h3>
+<p>Recreativo, enfocado en habilidades básicas.</p>
             <p>Horarios: Lunes y jueves, 18:30-20:00 (Feria El Belloto).</p>
         </article>
         <article>
-            <h3>Grupo 2 - Nivel Deportivo</h3>
+          <h3>Grupo 2 - Nivel Deportivo</h3>
             <p>Competitivo inicial, con enfoque técnico.</p>
             <p>Horarios: Martes y jueves, 18:30-20:00; Domingo, 18:00-20:00.</p>
-        </article>
+      </article>
         <article>
             <h3>Grupo 3 - Nivel Competitivo</h3>
             <p>Participación en ligas nacionales.</p>
@@ -173,43 +310,95 @@
             <p>Competencia profesional, con entrenamientos complementarios desde casa.</p>
             <p>Horarios: Lunes, martes, jueves, 18:30-20:00; Domingo, 18:00-20:00.</p>
         </article>
-    </section>
+    </div>
+</section>
 
-    <!-- Sección Competencias -->
-    <section id="competencias">
-        <h2>Competencias</h2>
-        <p>El club participa regularmente en las siguientes competencias:</p>
-        <ul>
-            <li>Liga Regional de Patín Carrera</li>
-            <li>Federación Deportiva Chilena - Nivel Escuela e Intermedia</li>
-            <li>Ranking Nacional e Internacional</li>
-        </ul>
-        <p><strong>Espacio para agregar calendario de eventos futuros</strong></p>
-    </section>
+<style>
+/* Fondo animado */
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Envía el fondo detrás del contenido */
+}
 
-    <!-- Sección Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Feria El Belloto, Villa Alemana.</p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/villaalemanaenpatines">Villaalemanaenpatines</a></p>
-        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/groups/villaalemanaenpatines">Villa Alemana en Patines (grupo)</a></p>
-        <form action="#">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fade 9s infinite; /* Cambia cada 3 segundos */
+}
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
 
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+.slide:nth-child(2) {
+    animation-delay: 3s;
+}
 
-            <button type="submit">Enviar</button>
+.slide:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    33%, 66% {
+        opacity: 1;
+    }
+}
+</style>
+
+
+<!-- Sección Contacto -->
+<section id="contacto" style="display: flex; padding: 20px; color: white; background-color: #333;">
+    <!-- Imagen a la izquierda -->
+    <div style="width: 40%; background-image: url('img/Imagen61.jpg'); background-size: cover; background-position: center; border-radius: 10px; margin-right: 20px;">
+        <!-- Espacio reservado para la imagen de fondo -->
+    </div>
+
+    <!-- Contenido y formulario -->
+    <div style="width: 60%;">
+        <h2 style="text-align: center;">Contacto</h2>
+        <div style="margin-bottom: 20px;">
+          <p><strong>Dirección:</strong> Feria El Belloto, Quilpué.</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/villaalemanaenpatines" style="color: #fff; text-decoration: underline;">Villaalemanaenpatines</a></p>
+		<p>
+    <strong>WhatsApp:</strong>
+    <a href="https://wa.me/56950538626" style="color: #fff; text-decoration: none;">
+        <img src="img/WhatsApp.svg.webp" alt="WhatsApp" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">
+        +56 9 5053 8626
+    </a>
+</p>	
+<p><strong>Facebook:</strong> <a href="https://www.facebook.com/groups/villaalemanaenpatines" style="color: #fff; text-decoration: underline;">Villa Alemana en Patines (grupo)</a></p>
+        </div>
+        <form action="mailto:contactovaep@gmail.com" method="post" enctype="text/plain" style="background: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px;">
+            <label for="name" style="color: white;">Nombre:</label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc;">
+
+            <label for="email" style="color: white;">Email:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc;">
+
+            <label for="message" style="color: white;">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+
+            <button type="submit" style="background-color: #222; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Enviar</button>
         </form>
-    </section>
+    </div>
+</section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2024 Club Villa Alemana en Patines. Todos los derechos reservados.</p>
-    </footer>
+<!-- Pie de página -->
+<footer style="text-align: center; background-color: #222; color: white; padding: 10px;">
+    <p>&copy; 2025 Club Villa Alemana en Patines. Todos los derechos reservados.</p>
+</footer>
 </body>
+</html>
 </html>
