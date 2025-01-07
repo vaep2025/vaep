@@ -112,19 +112,57 @@
             height: auto;
         }
     </style>
-</head>
-<body>
-    <!-- Encabezado -->
-    <header style="display: flex; align-items: center; justify-content: space-between; background-image: url('img/nicio.jpg'); background-size: cover; background-attachment: fixed; background-position: center; color: white; padding: 20px;">
-        <!-- Logo de Villa Alemana (izquierda) -->
-        <img src="img/Imagen6.gif" alt="Logo Villa Alemana en Patines" style="width: 140px; height: auto;">
+<header style="display: flex; align-items: center; justify-content: space-between; background-image: url('img/nicio.jpg'); background-size: cover; background-attachment: fixed; background-position: center; color: white; padding: 20px; flex-wrap: wrap;">
+    <!-- Logo de Villa Alemana (izquierda) -->
+    <img src="img/Imagen6.gif" alt="Logo Villa Alemana en Patines" style="width: 120px; height: auto;">
 
-        <!-- Título del Club -->
-        <h1 style="flex: 1; text-align: center; margin: 0; font-size: 3.5rem;">Club Villa Alemana en Patines</h1>
+    <!-- Título del Club -->
+    <h1 style="flex: 1; text-align: center; margin: 10px 0; font-size: 2.5rem;">Club Villa Alemana en Patines</h1>
 
-        <!-- Logo de la Federación (derecha) -->
-	<img src="img/Federación1.png" alt="Logo Federación" style="width: 140px; height: auto;">
-    </header>
+    <!-- Logo de la Federación (derecha) -->
+    <img src="img/Federación1.png" alt="Logo Federación" style="width: 120px; height: auto;">
+</header>
+
+<style>
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header img {
+        width: 100px; /* Reduce el tamaño de los logos */
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Reduce el tamaño del texto */
+    }
+}
+</style>
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header img {
+        width: 100px; /* Reduce el tamaño de los logos */
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Reduce el tamaño del texto */
+    }
+}
+</style>
+
 
     <!-- Navegación -->
     <nav style="background-color: #222; padding: 10px;">
